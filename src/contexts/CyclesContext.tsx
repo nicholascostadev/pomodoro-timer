@@ -62,6 +62,7 @@ export const CyclesContextProvider = ({
       if (storedState) {
         return JSON.parse(storedState);
       }
+      return {} as CyclesState;
     }
   );
 
