@@ -7,3 +7,5 @@ This application can be used to do your pomodoro technique for work, study, and 
 - Styled Components
 - React hook form
 - zod(form validation)
+
+[Website](http://pomodoro-timer-delta-dusky.vercel.app/)
