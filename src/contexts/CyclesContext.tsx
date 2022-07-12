@@ -55,13 +55,16 @@ export const CyclesContextProvider = ({
     {
       cycles: [],
       activeCycleId: null
-    },
+    } as CyclesState,
     () => {
       const storedState = localStorage.getItem('@timer:cycles-state-1.0.0');
 
-      if (storedState) {
-        return JSON.parse(storedState);
-      }
+      if (storedState) return JSON.parse(storedState);
+      else
+        return {
+          cycles: [],
+          activeCycleId: null
+        } as CyclesState;
     }
   );
 
